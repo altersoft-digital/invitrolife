@@ -1,0 +1,556 @@
+@font-face {
+    font-family: 'Mukta';
+    src: url('../fonts/Mukta-Bold.ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    src: url('../fonts/Mukta-ExtraBold.ttf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    src: url('../fonts/Mukta-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    src: url('../fonts/Mukta-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mukta';
+    src: url('../fonts/Mukta-SemiBold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Newsreader';
+    src: url('../fonts/Newsreader-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Newsreader';
+    src: url('../fonts/Newsreader-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Mukta';
+    font-weight: 400;
+    color: #393021;
+}
+
+.btn {
+    outline: none;
+    background: none;
+    border: none;
+    font-family: 'Mukta';
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn span {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 122%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1,
+h1 span {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 74px;
+    line-height: 104%;
+    letter-spacing: -0.02em;
+    max-width: 505px;
+}
+
+h1 span {
+    color: #F79C0A;
+}
+
+h2 {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 104%;
+    /* or 67px */
+    letter-spacing: -0.02em;
+    /* Style */
+    color: #393021;
+    mix-blend-mode: normal;
+}
+
+
+/* ---------------------------------------- HEADER START ----------------------------------------  */
+
+.main-header {
+    background-color: #FFF9F0;
+    display: grid;
+    grid-gap: 24px;
+    padding-bottom: 43px;
+}
+
+.header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    grid-gap: 64px;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.btn-contactus {
+    background-color: #FDE6C2;
+    padding: 20px 24px 20px 57px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.btn-contactus:hover {
+    background-color: #EE6F14;
+}
+
+.btn-contactus:hover>span {
+    color: #fff;
+}
+
+.btn-contactus:hover>svg path {
+    fill: #fff;
+}
+
+.btn-contactus span {
+    color: #EE6F14;
+    line-height: 122%;
+}
+
+.nav-header {
+    display: grid;
+    justify-content: end;
+}
+
+.nav-header ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 48px;
+}
+
+.nav-header ul li a {
+    color: #948C7E;
+    font-weight: 800;
+    line-height: 122%;
+    font-size: 18px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 4px;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-header ul li a:hover {
+    color: #393021;
+}
+
+
+/* ---------------------------------------- HEADER END ----------------------------------------  */
+
+
+/* ---------------------------------------- HERO START ----------------------------------------  */
+
+.section-hero {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    grid-gap: 52px;
+}
+
+.section-hero .left-side {
+    margin-top: 93px;
+}
+
+.section-hero .right-side {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+}
+
+.section-hero .right-side img {
+    width: 100%;
+    height: auto;
+}
+
+.title-small {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 122%;
+    color: #F79C0A;
+    margin-bottom: 24px;
+}
+
+.p-normal {
+    font-family: 'Newsreader';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 148%;
+    color: #948C7E;
+    max-width: 491px;
+    margin-top: 32px;
+}
+
+.left-side-btns-container {
+    margin-top: 48px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    grid-gap: 64px;
+    align-items: center;
+}
+
+.btn-cta {
+    background-color: #F79C0A;
+    padding: 24px 64px;
+    border-radius: 8px;
+}
+
+.btn-cta:hover {
+    background-color: #E4910C;
+}
+
+.btn-cta span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.opening-container {
+    display: grid;
+    grid-gap: 8px;
+    justify-items: center;
+}
+
+.opening-header-container {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 4px;
+}
+
+.opening-header-container p {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 122%;
+    /* identical to box height, or 17px */
+    /* #948C7E */
+    color: #948C7E;
+}
+
+.opening-container #time-stamp {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122%;
+    /* identical to box height, or 22px */
+    /* Style */
+    color: #393021;
+}
+
+
+/* ---------------------------------------- HERO END ----------------------------------------  */
+
+
+/* ---------------------------------------- ABOUT US START ----------------------------------------  */
+
+.section-aboutus {
+    max-width: 1150px;
+    margin: auto;
+    padding-top: 128px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 120px;
+}
+
+.section-aboutus .left-side {
+    max-height: 639px;
+}
+
+.section-aboutus .right-side {
+    margin-top: 108px;
+    display: grid;
+    align-content: start;
+    max-width: 536px;
+}
+
+.section-aboutus .right-side .achievements-container {
+    margin-top: 48px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 64px;
+}
+
+.achievements-container-mobile {
+    display: none;
+}
+
+.achievements-h3 {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 122%;
+    /* identical to box height, or 20px */
+    letter-spacing: -0.02em;
+    /* #948C7E */
+    color: #948C7E;
+}
+
+.achievements-answer {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 122%;
+    /* identical to box height, or 39px */
+    letter-spacing: -0.02em;
+    /* Style */
+    color: #393021;
+}
+
+.achievements-item {
+    display: grid;
+    grid-gap: 8px;
+}
+
+
+/* ---------------------------------------- ABOUT US END ----------------------------------------  */
+
+
+/* ---------------------------------------- PERKS START ----------------------------------------  */
+
+.section-perks {
+    background-color: #FEFAF2;
+    padding: 120px 0;
+}
+
+.section-perks h2 {
+    text-align: center;
+}
+
+.section-perks .h2-small-below {
+    text-align: center;
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 122%;
+    /* identical to box height, or 39px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #568A9F;
+    margin-top: 12px;
+    margin-bottom: 52px;
+}
+
+.section-perks-inside-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+}
+
+.perks-item {
+    background-color: #fff;
+    padding: 52px 32px;
+    border-radius: 32px;
+    display: grid;
+    align-content: start;
+    justify-content: center;
+    justify-items: center;
+}
+
+.perks-item h3 {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 122%;
+    /* or 29px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    /* Style */
+    color: #393021;
+    margin-top: 32px;
+}
+
+.perks-item p {
+    margin-top: 24px;
+    text-align: center;
+}
+
+
+/* ---------------------------------------- PERKS END ----------------------------------------  */
+
+
+/* ---------------------------------------- HOW IT WORKS START ----------------------------------------  */
+
+.section-howitworks {
+    padding: 112px 0 170px 0;
+}
+
+.section-howitworks .title-small {
+    margin-bottom: 16px;
+}
+
+.section-howitworks .p-normal {
+    margin-top: 16px;
+    max-width: 700px;
+}
+
+.howitworks-header-container {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+/* ---------------------------------------- HOW IT WORKS END ----------------------------------------  */
+
+
+/* ---------------------------------------- RESPONSIVES START ----------------------------------------  */
+
+@media only screen and (max-width: 1480px) {
+    .container {
+        margin: 0 40px;
+        width: unset;
+    }
+    .section-aboutus {
+        margin: 0 40px;
+    }
+    .nav-header ul {
+        grid-gap: 32px;
+    }
+    .header {
+        grid-gap: 52px;
+    }
+    .section-hero .left-side {
+        margin-top: 0;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .nav-header {
+        display: none;
+    }
+    .btn-contactus {
+        display: none;
+    }
+    .section-hero {
+        grid-auto-flow: row;
+    }
+    .section-hero .right-side img {
+        max-width: 640px;
+    }
+    .section-hero .right-side {
+        justify-content: center;
+    }
+    .section-hero .left-side {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+    .section-hero .left-side h1,
+    .section-hero .left-side p {
+        text-align: center;
+    }
+    .achievements-container-desktop {
+        display: none !important;
+    }
+    .section-aboutus {
+        grid-auto-flow: row;
+        grid-gap: 64px;
+        padding-top: 64px;
+    }
+    .section-aboutus .left-side {
+        order: 2;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-gap: 52px;
+        max-height: unset;
+    }
+    .section-aboutus .left-side img {
+        width: 100%;
+        height: auto;
+    }
+    .section-aboutus .right-side {
+        justify-items: center;
+        max-width: 100%;
+        margin-top: unset;
+    }
+    .section-aboutus .right-side h2,
+    .section-aboutus .right-side p {
+        text-align: center;
+    }
+    .achievements-container-mobile {
+        grid-gap: 64px;
+        display: grid;
+    }
+    .section-perks-inside-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-perks-inside-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ---------------------------------------- RESPONSIVES END ----------------------------------------  */
