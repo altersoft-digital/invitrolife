@@ -106,7 +106,8 @@ h1 span {
     color: #F79C0A;
 }
 
-h2 {
+h2,
+h2 span {
     font-family: 'Mukta';
     font-style: normal;
     font-weight: 800;
@@ -117,6 +118,31 @@ h2 {
     /* Style */
     color: #393021;
     mix-blend-mode: normal;
+}
+
+.btn-seeall a {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 122%;
+    color: #EE6F14;
+    padding: 16px 64px;
+    border-radius: 8px;
+    border: 2px solid rgba(238, 111, 20, 0.2);
+    display: grid;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-seeall a:hover {
+    color: #fff;
+    background-color: #EE6F14;
+}
+
+.section-cta-container {
+    display: grid;
+    justify-items: center;
+    margin-top: 48px;
 }
 
 
@@ -453,12 +479,402 @@ h2 {
 }
 
 .howitworks-header-container {
+    margin-bottom: 35px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.swiper-slide {
     display: grid;
     grid-auto-flow: column;
+    background-color: #FFF6E7;
+    border-radius: 24px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-functions-container {
+    display: grid;
+    grid-auto-flow: column;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    align-items: center;
+}
+
+.swiper-pagination {
+    width: auto !important;
+    position: unset;
+    height: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: #CED8D6;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #3D665B;
+    transform: scale(1.3);
+}
+
+.swiper-left-side {
+    padding: 48px;
+    max-width: 326px;
+}
+
+.swiper-left-side h3,
+.swiper-left-side h3 span {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 122%;
+    /* identical to box height, or 39px */
+    /* Style */
+    color: #393021;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.swiper-left-side h3 span {
+    color: #EE6F14;
+    display: block;
+}
+
+.swiper-right-side {
+    display: grid;
+    align-items: center;
+}
+
+.swiper-right-side img {
+    width: 100%;
+    height: auto;
 }
 
 
 /* ---------------------------------------- HOW IT WORKS END ----------------------------------------  */
+
+
+/* ---------------------------------------- FAQ START ----------------------------------------  */
+
+.section-faq {
+    background-color: #457C93;
+    padding: 80px 0 144px 0;
+}
+
+.section-faq .p-normal {
+    color: #B5CBD4;
+    text-align: center;
+    max-width: 703px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 80px;
+}
+
+.section-faq h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.faqs-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    align-items: start;
+    justify-content: center;
+}
+
+.faq-container {
+    background: #fff;
+    border-radius: 8px;
+}
+
+.question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 24px 32px;
+    padding-right: 96px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question h3 {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 26px;
+    /* identical to box height, or 108% */
+    text-transform: capitalize;
+    /* #EE6F14 */
+    color: #393021;
+}
+
+.selected-h3 {
+    color: #EE6F14 !important;
+}
+
+.question::after {
+    content: url('../img/arrow-down.svg');
+    font-size: 2.2rem;
+    position: absolute;
+    right: 44px;
+    transition: 0.2s;
+    z-index: 2;
+    background-color: red;
+    width: 16px;
+    height: 16px;
+    background: url('../img/arrow-down.svg');
+    overflow: hidden;
+    background-position: center center;
+}
+
+.question::before {
+    content: '';
+    background-color: #F5F6F9;
+    width: 40px;
+    border-radius: 8px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    right: 32px;
+}
+
+.question.active::after {
+    transform: rotate(180deg);
+}
+
+.answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.answer {
+    padding: 8px 32px 40px 32px;
+    font-family: 'Newsreader';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    /* or 130% */
+    letter-spacing: 0.2px;
+    /* Style */
+    color: #393021;
+    opacity: 0.85;
+}
+
+
+/* ---------------------------------------- FAQ END ----------------------------------------  */
+
+
+/* ---------------------------------------- BLOG START ----------------------------------------  */
+
+.section-blog {
+    padding: 112px 0 128px 0;
+}
+
+.section-blog h2 {
+    font-size: 46px;
+}
+
+.title-small-big {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 122%;
+    /* identical to box height, or 39px */
+    letter-spacing: -0.02em;
+    /* #EE6F14 */
+    color: #EE6F14;
+    margin-bottom: 12px;
+}
+
+.section-blog .slider-container {
+    margin-top: 24px;
+}
+
+.blog-slide-container {
+    display: grid;
+    cursor: pointer;
+}
+
+.blog-slide-container img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.blog-slide-text-container {
+    display: grid;
+    grid-gap: 16px;
+    padding: 32px;
+}
+
+.blog-slide-text-container h3 {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 122%;
+    color: #58595B;
+}
+
+.p-blog-article-slide {
+    font-family: 'Newsreader';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 148%;
+    /* or 27px */
+    /* #948C7E */
+    color: #948C7E;
+}
+
+
+/* ---------------------------------------- BLOG END ----------------------------------------  */
+
+
+/* ---------------------------------------- BRING BABY START ----------------------------------------  */
+
+.bringbaby-inside-container {
+    display: grid;
+    justify-items: center;
+}
+
+.section-bringbaby {
+    background-color: #FEFAF2;
+    padding: 112px 0;
+    position: relative;
+    margin-top: 214px;
+}
+
+.section-bringbaby h2 {
+    max-width: 490px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-bringbaby h2 span {
+    color: #EE6F14;
+}
+
+.section-bringbaby .p-normal {
+    margin-top: 32px;
+    text-align: center;
+    max-width: 653px;
+}
+
+#babybaloon {
+    position: absolute;
+    right: 68px;
+    top: -198px;
+    width: 20vw;
+    height: auto;
+}
+
+#home {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20vw;
+    height: auto;
+}
+
+
+/* ---------------------------------------- BRING BABY END ----------------------------------------  */
+
+
+/* ---------------------------------------- PARTNERS START ----------------------------------------  */
+
+.section-partners {
+    padding: 112px 0 144px 0;
+    display: grid;
+    justify-items: center;
+}
+
+.section-partners h2 {
+    font-size: 46px;
+    text-align: center;
+}
+
+.section-partners p {
+    text-align: center;
+}
+
+.section-partners .p-normal {
+    max-width: 703px;
+}
+
+.partners-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 74px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-item {
+    background-color: #F8F8F8;
+    border-radius: 16px;
+    padding: 24px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/* ---------------------------------------- PARTNERS END ----------------------------------------  */
+
+.section-contactus {
+    background-color: #FDEFD3;
+    padding: 96px 0 128px 0;
+}
+
+.section-contactus h2 {
+    font-size: 46px;
+    text-align: center;
+}
+
+.section-contactus-header {
+    display: grid;
+    justify-items: center;
+}
+
+.section-contactus-header p {
+    text-align: center;
+}
+
+.contactus-boxes-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 32px;
+    grid-template-columns: auto 1fr;
+    margin-top: 48px;
+}
+
+.contactus-left-box {
+    background-color: #fff;
+}
+
+.contactus-right-box {
+    background-color: #fff;
+}
 
 
 /* ---------------------------------------- RESPONSIVES START ----------------------------------------  */
